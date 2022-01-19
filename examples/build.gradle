@@ -1,11 +1,11 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 29
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
@@ -22,7 +22,9 @@ android {
 
 dependencies {
     //implementation fileTree(include: ['*.aar'], dir: '../libs')
-    compileOnly 'org.openftc:hardware-stock:5.0'
-    compileOnly 'org.openftc:robotcore-stock:5.0'
+    //compileOnly 'org.openftc:hardware-stock:5.0'
+    //compileOnly 'org.openftc:robotcore-stock:5.0'
+    implementation 'org.firstinspires.ftc:Hardware:7.0.0'
+    implementation 'org.firstinspires.ftc:RobotCore:7.0.0'
     compileOnly project(':rev-extensions-2')
 }
